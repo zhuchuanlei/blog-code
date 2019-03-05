@@ -1,6 +1,7 @@
 ---
 title: parseInt 详解
 date: 2019-02-24
+top: 10
 # tags: 语法
 ---
 
