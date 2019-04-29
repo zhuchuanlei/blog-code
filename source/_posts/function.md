@@ -77,24 +77,27 @@ var f = function () {
 ### 总结
 
 1. 字面量声明的函数与普通声明不同，会占用更多的内存。
-2. js执行顺序: 先定义变量和函数声明，再执行相关操作。
-3. js查找变量顺序: 先查找栈，再找函数定义区
+2. js执行顺序: 先定义变量和声明函数，再执行相关操作。
+3. js查找变量顺序: 先在栈中查找，再在函数定义区中查找。
 
 ### 延伸
 
-1. 总结第1点，会不会与性能有关？字面量声明方式虽然占用内存多，但是查找速度较快。
+1. 总结第1点，会不会与性能有关？字面量声明方式虽然占用内存多，但是从总结的第3点可以看出查找速度较快。
 2. 总结第2点，是不是和变量提升有关？
 3. 栈中的变量，是否被定义、是否有指向、函数定义区是否有声明，会怎么样影响查找结果?
 ```js
 var f;
 function f () {}
-console.log(typeof f, '-', f);          // function - ƒ f(){}
+console.log(typeof f);          // function
+console.log(f);                 // ƒ f(){}
 
 var f = null;
 function f () {}
-console.log(typeof f, '-', f);          // object - null
+console.log(typeof f);          // object
+console.log(f);                 // null
 
 var f = undefined;
 function f () {}
-console.log(typeof f, '-', f);          // undefined - undefined
+console.log(typeof f);          // undefined
+console.log(f);                 // undefined
 ```
