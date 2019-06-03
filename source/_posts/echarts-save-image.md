@@ -1,7 +1,7 @@
 ---
 title: ECharts 保存图片
 date: 2019-06-03
-description: ECharts 保存图片有配置可以直接用，但是当保存Icon和其他Icon放在一起时，怎么处理呢。
+description: ECharts 保存图片有配置可以直接用，但是保存Icon是在canvas内部的。本文介绍了怎么将ECharts配置的Icon与非ECharts配置的Icon放在一起
 tags: [ECharts]
 ---
 
@@ -54,7 +54,7 @@ option = {
 
 1. 可拆分为上下两部分，互不影响。
 ![](../image/echart/3.png)
-2. `ECharts`提供了`getDataURL`的`API`，获取绘制图像的地址。
+2. `ECharts`提供了[`getDataURL`](https://www.echartsjs.com/api.html#echartsInstance.getDataURL)的`API`，获取绘制图像的地址。
 
 ```js
 let href = myChart.getDataURL({
