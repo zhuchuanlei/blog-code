@@ -1,6 +1,7 @@
 ---
 title: Git 常用命令记录
 date: 2019-03-12
+keywords: [git zsh oh-my-zsh]
 description: Git的一些常用命令记录，目前仅用于本人开发时参考。
 tags: 整理
 ---

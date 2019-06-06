@@ -1,6 +1,7 @@
 ---
 title: Hexo 常用语法整理
 date: 2019-01-03
+keywords: [hexo markDown]
 description: 本文介绍了 Hexo 的一些用法，如：代码块、图片、连接等，目前仅用于本人开发时参考。
 tags: 整理
 ---

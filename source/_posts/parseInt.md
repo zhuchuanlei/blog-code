@@ -1,6 +1,7 @@
 ---
 title: parseInt 详解
 date: 2019-02-24
+keywords: [javaScript基础 parseInt]
 description: 由题目['1','2','3'].map(parseInt)介绍 parseInt 的一些用法和规则。
 keywords:
 top: 10

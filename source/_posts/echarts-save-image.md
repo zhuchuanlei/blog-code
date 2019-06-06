@@ -1,6 +1,7 @@
 ---
 title: 保存ECharts图片
 date: 2019-06-03
+keywords: [react ECharts 保存图片]
 description: 本文介绍了怎么将ECharts的Icon与非ECharts的Icon放在一起显示
 tags: [ECharts]
 ---
