@@ -1,13 +1,13 @@
 ---
-title: ECharts 保存图片
+title: 保存ECharts图片
 date: 2019-06-03
-description: ECharts 保存图片有配置可以直接用，但是保存Icon是在canvas内部的。本文介绍了怎么将ECharts配置的Icon与非ECharts配置的Icon放在一起
+description: 本文介绍了怎么将ECharts的Icon与非ECharts的Icon放在一起显示
 tags: [ECharts]
 ---
 
 `ECharts`最终是返回一个`canvas`标签，其配置项是已经设定好的，而且部分配置是不支持传入自定义的元素的，所以想要画出丰富的图片，就需要舍弃某些配置，手动封装组件。下面介绍一下保存`ECharts`图片的两种方案。
 
-### ECharts 默认支持的保存图片
+### 看一下 ECharts 默认保存样式
 
 `ECharts` 的配置 `toolbox.feature.saveAsImage` 显示出保存图片的Icon，如下图是`ECharts`的默认样式。
 
