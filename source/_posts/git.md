@@ -29,11 +29,11 @@ git push origin --delete tag v12.2.0      // 删除远程分支
 撤销某次提交
 git revert HEAD               // 撤回最近一次提交
 git revert HEAD~n             // 撤回最近n次提交
+git revert commit_id          // 撤回 commit_id 提交
 git reset commit_id           // 撤回某次已经提交的代码
 
 代码回滚到
 git reset --hard commit_id    // 将代码会滚到某次提交代码中
-git revert commit_id          // 将代码会滚到某次提交代码之前
 ```
 
 ### oh-my-zsh 常用命令
