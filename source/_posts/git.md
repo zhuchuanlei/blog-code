@@ -52,3 +52,14 @@ git reset --hard commit_id    // 将代码会滚到某次提交代码中
 | gsta | git stash save |
 | gstp | git stash pop |
 | gcmsg | git commit -m |
+
+
+### lunix 常用命令
+
+| 命令 | 说明 | 例子 |
+| - | - | - |
+| ls | 查看文件 | ls 或 ls -l |
+| mkdir | 创建文件夹 | mkdir react |
+| mv | 修改文件名 | mv index.js main.txt |
+| rm -rf | 删除文件 -r是递归删除 -f 删除指定项 | rm -r data/ 或 rm -r data/index.js |
+| rz | 上传文件 | |
