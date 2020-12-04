@@ -14,8 +14,10 @@ tags: []
 
 ### 解决方法
 
-1. 找到/node_modules/sockjs-client/dist/sockjs.js，
-2. 找到代码的 1605行，
+1. 修改文件配置
+
+- 找到/node_modules/sockjs-client/dist/sockjs.js，
+- 找到代码的 1605行，
 ```js
 try {
     // self.xhr.send(payload);
@@ -24,4 +26,17 @@ try {
     self._cleanup(false);
 }
   ```
-3. 解决。
+- 解决。
+
+2. 修改webpack配置
+```js
+port = 8000;
+{
+    entry: [
+        "webpack-dev-server/client?http://0.0.0.0:" + port,
+    ],
+    devServer: {
+        port: port,
+    }
+}
+```
