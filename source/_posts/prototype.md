@@ -28,10 +28,10 @@ console.log(ZS.sex);   // 男
 
 看第4行代码`Male.prototype.sex = "男";`，函数`Male`有个`prototype`对象属性，并且可以给其赋值。
 
-1. `Javascript`中，每一个函数都有一个`prototype`对象属性，指向的是另一个对象，这个对象叫它`实例原型`。
-2. `实例原型`中的所有属性和方法，都会被构造函数的实例所继承，如`sex`属性。所以会把不变的属性和方法，放在`实例原型`中。
+1. `Javascript`中，每一个函数都有一个`prototype`对象属性，指向的是另一个对象，这个对象叫它`原型对象`。
+2. `原型对象`中的所有属性和方法，都会被构造函数的实例所继承，如`sex`属性。所以会把不变的属性和方法，放在`原型对象`中。
 
-构造函数和实例原型之间的关系：
+构造函数和原型对象之间的关系：
 
 ![](../image/prototype/1.png)
 
@@ -41,7 +41,7 @@ console.log(ZS.sex);   // 男
 
 <img src="../image/prototype/2.png" width="220" />
 
-3. 每一个对象(null除外)都会有这个属性`__proto__`，它指向的是`实例原型`。
+3. 每一个对象(null除外)都会有这个属性`__proto__`，它指向的是`原型对象`。
 4. 执行`ZS.__proto__`相当于执行`Object.getPrototypeOf(ZS)`。
 
 ```js
@@ -78,7 +78,7 @@ console.log(ZS.__proto__.constructor === Male);    // true
 
 ## 原型的原型
 
-正如第3条所说的，每个对象都有原型。`ZS.__proto__`是一个对象，是通过构造函数`Object`创建的，那么`ZS.__proto__`的原型就是`Object`的实例原型。如下:
+正如第3条所说的，每个对象都有原型。`ZS.__proto__`是一个对象，是通过构造函数`Object`创建的，那么`ZS.__proto__`的原型就是`Object`的原型对象。如下:
 
 ```js
 console.log(ZS.__proto__.__proto__ === Object.prototype); // true
@@ -96,7 +96,7 @@ console.log(ZS.__proto__.__proto__ === Object.prototype); // true
 ## 总结
 
 1. 对象都有原型(null除外)，原型是个对象
-2. 对象的__proto__指向对应的原型，原型的constructor指向对应的构造函数，构造函数的prototype指向该实例的原型
+2. 对象的__proto__指向对应的原型，原型的constructor指向对应的构造函数，构造函数的prototype指向对应实例的原型对象
 3. 读取对象的属性时，从本身属性到一层一层的原型往上找，直到null。找到了即返回，找不到返回undefined
 
 
