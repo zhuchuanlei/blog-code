@@ -1,6 +1,7 @@
 ---
 title: Git 常用命令记录
 date: 2019-03-12
+keywords: [git zsh oh-my-zsh]
 description: Git的一些常用命令记录，目前仅用于本人开发时参考。
 tags: 整理
 ---
@@ -28,11 +29,11 @@ git push origin --delete tag v12.2.0      // 删除远程分支
 撤销某次提交
 git revert HEAD               // 撤回最近一次提交
 git revert HEAD~n             // 撤回最近n次提交
+git revert commit_id          // 撤回 commit_id 提交
 git reset commit_id           // 撤回某次已经提交的代码
 
 代码回滚到
 git reset --hard commit_id    // 将代码会滚到某次提交代码中
-git revert commit_id          // 将代码会滚到某次提交代码之前
 ```
 
 ### oh-my-zsh 常用命令
@@ -51,3 +52,14 @@ git revert commit_id          // 将代码会滚到某次提交代码之前
 | gsta | git stash save |
 | gstp | git stash pop |
 | gcmsg | git commit -m |
+
+
+### lunix 常用命令
+
+| 命令 | 说明 | 例子 |
+| - | - | - |
+| ls | 查看文件 | ls 或 ls -l |
+| mkdir | 创建文件夹 | mkdir react |
+| mv | 修改文件名 | mv index.js main.txt |
+| rm -rf | 删除文件 -r是递归删除 -f 删除指定项 | rm -r data/ 或 rm -r data/index.js |
+| rz | 上传文件 | |

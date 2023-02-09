@@ -1,6 +1,7 @@
 ---
-title: Hexo 常用语法整理
+title: Hexo markDown 常用语法整理
 date: 2019-01-03
+keywords: [hexo markDown]
 description: 本文介绍了 Hexo 的一些用法，如：代码块、图片、连接等，目前仅用于本人开发时参考。
 tags: 整理
 ---
@@ -20,9 +21,10 @@ tags: 整理
 
 # 图片
 
-``` 
+``` markdown
 ![](../image/test.png)
 ![](http://placekitten.com/g/20/20)
+[![沙漠中的岩石图片](/assets/img/shiprock.jpg "Shiprock")](https://markdown.com.cn) // 图片链接
 ```
 
 当找不到目标图片, 显示[]中的文字
@@ -31,18 +33,23 @@ tags: 整理
 
 
 # 代码块
-使用```
+
 ![代码块](../image/codeblock.png)
+
+# 引用
+
+> 应用块
+> 应用块
 
 # 链接
 
 ```
-[Hexo语法](https://zhuchuanlei.github.io/blog/Hexo语法/)
+[Hexo语法](https://zhuchuanlei.github.io/blog/Hexo语法/  "title")
 [Hexo语法]: https://zhuchuanlei.github.io/blog/Hexo语法/
 ```
 [Hexo语法](https://zhuchuanlei.github.io/blog/Hexo语法/)
 [Hexo语法]: https://zhuchuanlei.github.io/blog/Hexo语法/
-```
+
 # 分割线
 
 ```
