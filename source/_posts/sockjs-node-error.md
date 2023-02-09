@@ -3,7 +3,7 @@ title: sockjs-node 报错
 date: 2019-06-06
 keywords: [sockjs-node webpack]
 description: 解决项目本地运行时一直报 sockjs-node/info 接口的错误
-tags: []
+tags: [整理]
 ---
 
 ### sockjs-node 报错
