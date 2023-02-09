@@ -264,6 +264,8 @@ mobile_layout_economy: false
 # Android Chrome header panel color ($black-deep).
 android_chrome_color: "#222"
 
+baidu_site_verification: codeva-eDCqhDkiN7
+
 # Custom Logo.
 # !!Only available for Default Scheme currently.
 # Options:
