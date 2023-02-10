@@ -3,7 +3,7 @@ title: 下载文档显示loading动画实现方式
 date: 2020-08-17
 keywords: [download loading 实现]
 description: 下载文档时，怎么能显示loading，并在文件流导出后及时隐藏loading
-tags: [优化 整理]
+tags: [优化, 整理]
 ---
 
 ## 前言
